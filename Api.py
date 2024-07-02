@@ -8,7 +8,7 @@ def Getid(name):
 
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YzkxMTZhYzg0MTBjNjFiYmU4OTQ3ZDA4YWFlOGEyNyIsInN1YiI6IjY2MTdhZDhjZDhmNDRlMDEzMDJlMjRkMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9T9-Io6pZJke6ont3Q-MvfZwRuFtRC-bX2d_dIOdpbE"
+       "Authorization": "Bearer " # place bearer key here
     }
     
     try:
@@ -31,7 +31,7 @@ def GetDetails(movie_id):
     # Headers including your Bearer token
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YzkxMTZhYzg0MTBjNjFiYmU4OTQ3ZDA4YWFlOGEyNyIsInN1YiI6IjY2MTdhZDhjZDhmNDRlMDEzMDJlMjRkMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9T9-Io6pZJke6ont3Q-MvfZwRuFtRC-bX2d_dIOdpbE"
+        "Authorization": "Bearer " # place bearer key here
     }
 
     # List to store review contents
@@ -76,7 +76,7 @@ def GetImage(Id):
 
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YzkxMTZhYzg0MTBjNjFiYmU4OTQ3ZDA4YWFlOGEyNyIsInN1YiI6IjY2MTdhZDhjZDhmNDRlMDEzMDJlMjRkMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9T9-Io6pZJke6ont3Q-MvfZwRuFtRC-bX2d_dIOdpbE"
+        "Authorization": "Bearer " # place bearer key here
     }
 
     response = requests.get(url, headers=headers)
@@ -96,7 +96,7 @@ def GetKeywords(id):
 
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YzkxMTZhYzg0MTBjNjFiYmU4OTQ3ZDA4YWFlOGEyNyIsInN1YiI6IjY2MTdhZDhjZDhmNDRlMDEzMDJlMjRkMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9T9-Io6pZJke6ont3Q-MvfZwRuFtRC-bX2d_dIOdpbE"
+        "Authorization": "Bearer " # place bearer key here
     }
 
     response = requests.get(url, headers=headers)
@@ -115,7 +115,7 @@ def GetTrailer(movie_id):
 
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YzkxMTZhYzg0MTBjNjFiYmU4OTQ3ZDA4YWFlOGEyNyIsInN1YiI6IjY2MTdhZDhjZDhmNDRlMDEzMDJlMjRkMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9T9-Io6pZJke6ont3Q-MvfZwRuFtRC-bX2d_dIOdpbE"
+        "Authorization": "Bearer " # place bearer key here
     }
 
     response = requests.get(url, headers=headers)
