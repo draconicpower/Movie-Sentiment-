@@ -13,3 +13,4 @@ Uses
 - NLTK
 - Flask
 - TMDB API
+- Uses enviorment variables to keep Bearer Key Protected 
