@@ -4,7 +4,7 @@ This Software Will Give the User the sentiment of specific Movies That are provi
 ------------------------Setup------------------------
 Bearer Key Required. 
 1. Get your key from https://developer.themoviedb.org/reference/intro/getting-started
-2. Place bearer key in designated positions in .env
+2. Create .env Space and put your bearer code in this format API_KEY = "" <-- Your Key Goes here
 3. Run From Flask
 
 
