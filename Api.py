@@ -1,14 +1,21 @@
 import requests
 import json
+import os
+from dotenv import load_dotenv, find_dotenv
+
+dotenv_path = find_dotenv()
+load_dotenv(dotenv_path)
 
 
+
+key = os.getenv("API_KEY")
 def Getid(name):
 
     url = f"https://api.themoviedb.org/3/search/movie?query={name}&language=en-US&page=1"
 
     headers = {
         "accept": "application/json",
-       "Authorization": "Bearer " # place bearer key here
+       "Authorization": f"Bearer {key}" # place bearer key here
     }
     
     try:
@@ -31,7 +38,7 @@ def GetDetails(movie_id):
     # Headers including your Bearer token
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer " # place bearer key here
+       "Authorization": f"Bearer {key}"
     }
 
     # List to store review contents
@@ -76,7 +83,7 @@ def GetImage(Id):
 
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer " # place bearer key here
+        "Authorization": f"Bearer {key}"
     }
 
     response = requests.get(url, headers=headers)
@@ -96,7 +103,7 @@ def GetKeywords(id):
 
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer " # place bearer key here
+        "Authorization": f"Bearer {key}"
     }
 
     response = requests.get(url, headers=headers)
@@ -115,7 +122,7 @@ def GetTrailer(movie_id):
 
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer " # place bearer key here
+        "Authorization": f"Bearer {key}"
     }
 
     response = requests.get(url, headers=headers)
